@@ -49,16 +49,21 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "FULL STACK DEVELOPER WHO BUILDS END-TO-END SOLUTIONS ACROSS ANY STACK",
+  subTitle:
+    "FULL STACK DEVELOPER WHO BUILDS END-TO-END SOLUTIONS ACROSS ANY STACK",
   skills: [
     emoji(
       "⚡ Build robust and scalable full-stack applications using Laravel, Node.js, and modern JavaScript frameworks"
     ),
-    emoji("⚡ Develop and maintain clean, efficient backend APIs and database structures"),
+    emoji(
+      "⚡ Develop and maintain clean, efficient backend APIs and database structures"
+    ),
     emoji(
       "⚡ Integrate third-party services and APIs like Stripe, Firebase, AWS, and SCIM with ease"
     ),
-    emoji("⚡ Transform complex business logic into intuitive, responsive user interfaces"),
+    emoji(
+      "⚡ Transform complex business logic into intuitive, responsive user interfaces"
+    ),
     emoji(
       "⚡ Adapt to any tech stack with speed thanks to a deep understanding of system architecture and AI-assisted workflows"
     )
@@ -133,7 +138,6 @@ const skillsSection = {
   display: true
 };
 
-
 // Education Section
 
 const educationInfo = {
@@ -152,7 +156,6 @@ const educationInfo = {
     }
   ]
 };
-
 
 // Your top 3 proficient stacks/tech experience
 
@@ -179,36 +182,44 @@ const techStack = {
   displayCodersrank: false
 };
 
-
-// Work experience section
-
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
       role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      company: "Onyxtec",
+      companylogo: require("./assets/images/onyxtec.jpeg"), // Replace with the actual logo
+      date: "June 2024 – Present",
+      desc: "Working across multiple Laravel-based projects and stacks. Contributing to scalable backend systems, implementing unit tests, and enhancing application performance.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Worked on Laravel projects like EliteWorker, Laali, Mecca Digital, and ThePeerNetwork",
+        "Developed a Laravel 11 boilerplate for standardizing future projects",
+        "Maintained PHP Unit testing for Form Assembly module"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "PHP Developer",
+      company: "Tekrevol",
+      companylogo: require("./assets/images/tekrevol.jpg"), // Replace with the actual logo
+      date: "Jan 2023 – April 2024",
+      desc: "Built full-stack applications using Laravel, React, and Node.js while integrating modern AI practices like prompt engineering into the workflow.",
+      descBullets: [
+        "Developed and maintained apps such as HotSeats, SpotFinder (Laravel), Page Perks and Body Solutions (ReactJS)",
+        "Built a Price Comparison Web Scraper using Node.js and ElasticSearch",
+        "Explored and implemented AI features through prompt engineering"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Full Stack Developer",
+      company: "Asian Solutions Pvt Ltd",
+      companylogo: require("./assets/images/asiansol.jpeg"), // Replace with the actual logo
+      date: "June 2021 – Dec 2022",
+      desc: "Started as an intern and rose to Full Stack Developer. Took charge of multiple projects including frontend, backend, and integrations with third-party services.",
+      descBullets: [
+        "Built Excel and Word Add-ins with custom functions using Firebase, ReactJS, and StripeJS",
+        "Lead development on EstateAds (Laravel 8)",
+        "Worked on SCIM, SSO, and API integrations across multiple platforms"
+      ]
     }
   ]
 };
@@ -218,7 +229,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
