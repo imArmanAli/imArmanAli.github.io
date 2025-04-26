@@ -236,34 +236,67 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "Major Products and Platforms I've Helped Build at Companies",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/laali-logo.png"),
+      projectName: "Laali",
+      projectDesc: "Contributed to this project as Lead",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Learn More",
+          url: "https://laali.co/"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/hotseatnewlogo.png"),
+      projectName: "HotSeats",
+      projectDesc: "Developed a seat reservation system using Laravel 8, enabling dynamic bookings and user management.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Learn More",
+          url: "https://api.uniquexp.io/login"
         }
       ]
-    }
+    },
+    {
+      image: require("./assets/images/spotfinder.ico"),
+      projectName: "SpotFinder",
+      projectDesc: "Contributed to a location-based service platform developed in Laravel 8, focusing on user interaction and search optimization.",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: "https://spotfinder.vn/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/md.png"),
+      projectName: "Mecca Digital",
+      projectDesc: "Worked on Laravel 11 application development and optimization to deliver high-performance digital solutions.",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: "https://tmc.meccadigital.io/login"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/ew.png"),
+      projectName: "EliteWorker",
+      projectDesc: "Helped develop a Laravel 6 based platform, focusing on scalability, security, and robust backend integration.",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: "https://neweliteworker.com/login#/"
+        }
+      ]
+    },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
+
 
 // Achievement Section
 // Include certificates, talks etc
@@ -323,7 +356,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -347,7 +380,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -366,7 +399,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -379,7 +412,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -395,18 +428,18 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+92-3349732212",
+  email_address: "ch.armanali99@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
