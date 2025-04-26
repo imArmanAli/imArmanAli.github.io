@@ -252,7 +252,8 @@ const bigProjects = {
     {
       image: require("./assets/images/hotseatnewlogo.png"),
       projectName: "HotSeats",
-      projectDesc: "Developed a seat reservation system using Laravel 8, enabling dynamic bookings and user management.",
+      projectDesc:
+        "Developed a seat reservation system using Laravel 8, enabling dynamic bookings and user management.",
       footerLink: [
         {
           name: "Learn More",
@@ -263,7 +264,8 @@ const bigProjects = {
     {
       image: require("./assets/images/spotfinder.ico"),
       projectName: "SpotFinder",
-      projectDesc: "Contributed to a location-based service platform developed in Laravel 8, focusing on user interaction and search optimization.",
+      projectDesc:
+        "Contributed to a location-based service platform developed in Laravel 8, focusing on user interaction and search optimization.",
       footerLink: [
         {
           name: "Learn More",
@@ -274,7 +276,8 @@ const bigProjects = {
     {
       image: require("./assets/images/md.png"),
       projectName: "Mecca Digital",
-      projectDesc: "Worked on Laravel 11 application development and optimization to deliver high-performance digital solutions.",
+      projectDesc:
+        "Worked on Laravel 11 application development and optimization to deliver high-performance digital solutions.",
       footerLink: [
         {
           name: "Learn More",
@@ -285,18 +288,18 @@ const bigProjects = {
     {
       image: require("./assets/images/ew.png"),
       projectName: "EliteWorker",
-      projectDesc: "Helped develop a Laravel 6 based platform, focusing on scalability, security, and robust backend integration.",
+      projectDesc:
+        "Helped develop a Laravel 6 based platform, focusing on scalability, security, and robust backend integration.",
       footerLink: [
         {
           name: "Learn More",
           url: "https://neweliteworker.com/login#/"
         }
       ]
-    },
+    }
   ],
   display: true
 };
-
 
 // Achievement Section
 // Include certificates, talks etc
