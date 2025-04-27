@@ -56,15 +56,20 @@
 }
 
 @media (max-width: 768px) {
+  .skills-heading {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .skill {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .meter {
+    height: 14px;
+  }
   .skills-container {
-    flex-direction: column;
-  }
-  .skills-bar {
-    line-height: 3rem;
-    margin: 20px;
-  }
-  .skills-image {
-    display: none;
-    order: 2;
+    width: 95%;
+    padding: 10px;
   }
 }
+

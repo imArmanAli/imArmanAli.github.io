@@ -100,25 +100,47 @@
   }
 }
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
-  .greeting-text {
-    font-size: 30px;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
   .greeting-main {
-    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
+  .greeting-text {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .greeting-text-p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 auto 20px;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .button-greeting-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Adds nice spacing between buttons */
+    margin-top: 20px;
+  }
+
   .greeting-image-div {
-    height: 256px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .greeting-image-div > img {
+    width: 80%;
+    height: auto;
+    max-width: 300px;
   }
 }
+
 
 @media (max-width: 320px) {
   .main {

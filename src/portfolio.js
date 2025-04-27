@@ -21,13 +21,13 @@ const illustration = {
 
 const greeting = {
   username: "Arman Ali",
-  title: "Hi all, I'm Arman",
+  title: "Hi all, I'm Arman Ali",
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with PHP / Laravel / JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1g5-88MJI0FWkSLl3BC4ax42ahgGfoxC7/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1g5-88MJI0FWkSLl3BC4ax42ahgGfoxC7/view?usp=sharing",
+  displayGreeting: true
 };
 
 // Social Media Links
@@ -229,7 +229,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -241,35 +241,12 @@ const bigProjects = {
     {
       image: require("./assets/images/laali-logo.png"),
       projectName: "Laali",
-      projectDesc: "Contributed to this project as Lead",
+      projectDesc:
+        "Laali is a wedding planning platform for South Asian couples, connecting them with culturally experienced vendors. I lead the project team, improving and expanding features regularly.",
       footerLink: [
         {
-          name: "Learn More",
+          name: "Visit Website",
           url: "https://laali.co/"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/hotseatnewlogo.png"),
-      projectName: "HotSeats",
-      projectDesc:
-        "Developed a seat reservation system using Laravel 8, enabling dynamic bookings and user management.",
-      footerLink: [
-        {
-          name: "Learn More",
-          url: "https://api.uniquexp.io/login"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/spotfinder.ico"),
-      projectName: "SpotFinder",
-      projectDesc:
-        "Contributed to a location-based service platform developed in Laravel 8, focusing on user interaction and search optimization.",
-      footerLink: [
-        {
-          name: "Learn More",
-          url: "https://spotfinder.vn/"
         }
       ]
     },
@@ -277,10 +254,10 @@ const bigProjects = {
       image: require("./assets/images/md.png"),
       projectName: "Mecca Digital",
       projectDesc:
-        "Worked on Laravel 11 application development and optimization to deliver high-performance digital solutions.",
+        "Mecca Digital is a social platform empowering Muslim communities worldwide. I contributed significantly by developing a major module focused on user profile matching.",
       footerLink: [
         {
-          name: "Learn More",
+          name: "Visit Website",
           url: "https://tmc.meccadigital.io/login"
         }
       ]
@@ -289,11 +266,59 @@ const bigProjects = {
       image: require("./assets/images/ew.png"),
       projectName: "EliteWorker",
       projectDesc:
-        "Helped develop a Laravel 6 based platform, focusing on scalability, security, and robust backend integration.",
+        "EliteWorker simplifies smart home construction by managing worker assignments and schedules. I contributed to its backend and collaborated with the team to enhance its features.",
       footerLink: [
         {
-          name: "Learn More",
+          name: "Visit Website",
           url: "https://neweliteworker.com/login#/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/worksurelogo.jpeg"),
+      projectName: "WorkSure",
+      projectDesc:
+        "WorkSure optimizes hiring and workforce management, focusing on recruitment, engagement, and employment verification. I led its development and built it from scratch with my team.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://worksure.io/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/tpnlogo.png"),
+      projectName: "The Peer Network",
+      projectDesc:
+        "TPN supports individuals and families facing mental health or substance use challenges by connecting them with Certified Peer specialists. I contributed to its development as part of the team.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://thepeernetwork.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/hotseatlogo.jpeg"),
+      projectName: "HotSeats",
+      projectDesc:
+        "HotSeats redefines fan experiences by offering real-time micro-experiences and personalized itineraries. I developed the backend architecture from scratch using Laravel 8.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://api.uniquexp.io/login"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/spotfinder.ico"),
+      projectName: "SpotFinder",
+      projectDesc:
+        "SpotFinder helps users discover restaurants nearby and make reservations easily. I built its backend completely from scratch using Laravel 8.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://spotfinder.vn/"
         }
       ]
     }
@@ -432,7 +457,9 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+92-3349732212",
-  email_address: "ch.armanali99@gmail.com"
+  email_address: "ch.armanali99@gmail.com",
+  location: "Pakistan",
+  bio: "Innovative, task-driven professional full stack developer with over 3 years of experience in developing websites and providing full customer satisfaction. Equipped with a record of success in consistently identifying and providing the technological needs through ingenious innovation. Proficient in developing databases, creating user interfaces, writing & testing codes & implementing new features based on user feedback."
 };
 
 // Twitter Section
