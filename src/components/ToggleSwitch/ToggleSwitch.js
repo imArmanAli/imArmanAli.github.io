@@ -1,18 +1,23 @@
-import React, {useState, useContext} from "react";
+import React, { useState, useEffect, useContext } from "react";
 import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
 import "./ToggleSwitch.scss";
 
 const ToggleSwitch = () => {
-  const {isDark} = useContext(StyleContext);
-  const [isChecked, setChecked] = useState(isDark);
   const styleContext = useContext(StyleContext);
+  const { isDark } = styleContext;
+  const [isChecked, setChecked] = useState(isDark);
+
+  // Sync isChecked with isDark whenever isDark changes
+  useEffect(() => {
+    setChecked(isDark);
+  }, [isDark]);
 
   return (
     <label className="switch">
       <input
         type="checkbox"
-        checked={isDark}
+        checked={isChecked}
         onChange={() => {
           styleContext.changeTheme();
           setChecked(!isChecked);
@@ -24,4 +29,5 @@ const ToggleSwitch = () => {
     </label>
   );
 };
+
 export default ToggleSwitch;

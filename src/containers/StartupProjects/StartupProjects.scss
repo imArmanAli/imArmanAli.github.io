@@ -1,10 +1,13 @@
 @import "../../_globalColor";
 
+/* Project card image */
 .card-image {
   max-width: 100%;
-  height: auto;
-  width: 250px;
+  width: 100%;
+  object-fit: contain;
 }
+
+/* Project title */
 .card-title {
   color: $titleColor;
   font-size: 22px;
@@ -12,11 +15,15 @@
   font-weight: 700;
   margin: 15px 0 0 0;
 }
+
+/* Project subtitle/description */
 .card-subtitle {
   color: $cardSubtitle;
   font-size: 17px;
   line-height: 1.5rem;
 }
+
+/* Project card */
 .project-card {
   display: flex;
   flex-direction: column;
@@ -25,45 +32,59 @@
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
+
+/* Light theme shadow */
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-.project-card-dark {
-  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.25s ease;
-}
-
-.project-detail {
-  text-align: center;
 }
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
 }
+
+/* Dark theme shadow */
+.project-card-dark {
+  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
+  transition: all 0.3s ease;
+}
 .project-card-dark:hover {
   box-shadow: 0px 20px 30px -10px $darkBoxShadow;
 }
+
+/* Card content */
+.project-detail {
+  text-align: center;
+}
+
+/* Image container */
 .project-image {
   position: relative;
-  height: 250px;
+  max-height: 250px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
+/* Projects grid container */
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(4, 1fr); // ✅ Always 4 on large screens
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden; // ✅ Prevent mobile scroll
 }
 
+/* Footer badge/link buttons */
 .project-card-footer span.project-tag {
   background: $buttonColor;
   color: $lightBackground3;
@@ -82,9 +103,52 @@
   transition: 0.2s ease-in;
 }
 
+/* ===================== Responsive Layout ===================== */
+
+/* Medium desktop: 3 columns */
+@media (max-width: 1200px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 992px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
 @media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
   .project-subtitle {
     font-size: 16px;
     text-align: center;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-subtitle {
+    font-size: 15px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-image {
+    max-height: 200px;
+  }
+
+  .card-image {
+    width: 100%;
+    height: auto;
   }
 }
