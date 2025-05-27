@@ -1,11 +1,11 @@
 import React from "react";
 import "./GithubProfileCard.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { contactInfo, isHireable } from "../../portfolio";
+import {contactInfo, isHireable} from "../../portfolio";
 import emoji from "react-easy-emoji";
-import { Fade } from "react-reveal";
+import {Fade} from "react-reveal";
 
-export default function GithubProfileCard({ prof }) {
+export default function GithubProfileCard({prof}) {
   if (isHireable) {
     prof.hireable = "Yes";
   } else {
@@ -24,14 +24,28 @@ export default function GithubProfileCard({ prof }) {
               <p className="subTitle blog-subtitle">{contactInfo.subtitle}</p>
             </div>
 
-            <h2 className="bio-text">{emoji(`"${contactInfo.bio}"`)}</h2>
+            <p className="bio-text">
+              Innovative, task-driven professional{" "}
+              <span className="highlight">full stack developer</span> with over{" "}
+              <span className="highlight">3 years of experience</span> in
+              developing websites and ensuring{" "}
+              <span className="highlight">customer satisfaction</span>. Skilled
+              in{" "}
+              <span className="highlight">
+                databases, Backend design and writing/testing code.{" "}
+              </span>
+              Passionate about{" "}
+              <span className="highlight">shipping features</span> based on user
+              feedback and solving{" "}
+              <span className="highlight"> real-world problems.</span>
+            </p>
 
             {/* Location */}
-            <div className="location-div">
+            {/* <div className="location-div">
               <span className="desc-prof">
                 📍 Location: {prof.location || contactInfo.location}
               </span>
-            </div>
+            </div> */}
 
             {/* Open to opportunities */}
             <div className="opp-div">
@@ -45,7 +59,10 @@ export default function GithubProfileCard({ prof }) {
               {contactInfo.number && (
                 <p className="desc-prof">
                   {" "}
-                  <a className="contact-detail" href={"tel:" + contactInfo.number}>
+                  <a
+                    className="contact-detail"
+                    href={"tel:" + contactInfo.number}
+                  >
                     {contactInfo.number}
                   </a>
                 </p>
