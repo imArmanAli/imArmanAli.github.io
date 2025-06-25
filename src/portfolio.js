@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with PHP / Laravel / JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1g5-88MJI0FWkSLl3BC4ax42ahgGfoxC7/view?usp=sharing",
+    "https://drive.google.com/file/d/1zCDTJZhAbzGAgnYBuTmjohOcAJAyEI-T/view?usp=sharing",
   displayGreeting: true
 };
 
